@@ -1,0 +1,29 @@
+
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following ArgumentError was thrown attaching to the render tree:
+Invalid argument(s): Couldn't resolve native function 'native_sum' in
+'package:ffinative/ffinative_bindings_generated.dart' : undefined symbol: native_sum.
+
+When the exception was thrown, this was the stack:
+#0      FfiTrampoline__ffi_resolver (dart:ffi)
+#1      _native_sum$Method$FfiNative$Ptr (package:ffinative/ffinative_bindings_generated.dart:16:14)
+#2      _native_sum$Method$FfiNative$Ptr (package:ffinative/ffinative_bindings_generated.dart)
+#3      native_sum (package:ffinative/ffinative_bindings_generated.dart)
+#4      sum (package:ffinative/ffinative.dart:14:26)
+#5      _MyAppState.initState (package:ffinative_example/main.dart:23:27)
+#6      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5101:55)
+#7      ComponentElement.mount (package:flutter/src/widgets/framework.dart:4944:5)
+#8      Element.inflateWidget (package:flutter/src/widgets/framework.dart:3953:16)
+#9      Element.updateChild (package:flutter/src/widgets/framework.dart:3682:18)
+#10     RenderObjectToWidgetElement._rebuild (package:flutter/src/widgets/binding.dart:1176:16)
+#11     RenderObjectToWidgetElement.mount (package:flutter/src/widgets/binding.dart:1145:5)
+#12     RenderObjectToWidgetAdapter.attachToRenderTree.<anonymous closure>
+(package:flutter/src/widgets/binding.dart:1092:18)
+#13     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:2682:19)
+#14     RenderObjectToWidgetAdapter.attachToRenderTree (package:flutter/src/widgets/binding.dart:1091:13)
+#15     WidgetsBinding.attachRootWidget (package:flutter/src/widgets/binding.dart:926:7)
+#16     WidgetsBinding.scheduleAttachRootWidget.<anonymous closure>
+(package:flutter/src/widgets/binding.dart:906:7)
+#20     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:192:26)
+(elided 3 frames from class _Timer and dart:async-patch)
+════════════════════════════════════════════════════════════════════════════════════════════════════
